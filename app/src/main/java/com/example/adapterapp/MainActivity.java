@@ -17,10 +17,10 @@ public class MainActivity extends AppCompatActivity {
 
         ArrayList<NumberView> mainActivity = new ArrayList<NumberView>();
         mainActivity.add(new NumberView(R.raw.aa,"1","one"));
-        mainActivity.add(new NumberView(R.raw.aa,"2","two"));
+        mainActivity.add(new NumberView("2","two"));
         mainActivity.add(new NumberView(R.raw.aa,"3","three"));
         mainActivity.add(new NumberView(R.raw.aa,"4","four"));
-        mainActivity.add(new NumberView(R.raw.aa,"5","five"));
+        mainActivity.add(new NumberView("5","five"));
         mainActivity.add(new NumberView(R.raw.aa,"6","six"));
         mainActivity.add(new NumberView(R.raw.aa,"7","seven"));
         mainActivity.add(new NumberView(R.raw.aa,"8","eight"));

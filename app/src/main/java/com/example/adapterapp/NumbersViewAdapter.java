@@ -29,8 +29,12 @@ public class NumbersViewAdapter extends ArrayAdapter<NumberView> {
 
         // then according to the position of the view assign the desired image for the same
         ImageView numbersImage = currentItemView.findViewById(R.id.list_item_icon);
-        assert currentNumberPosition != null;
-        numbersImage.setImageResource(currentNumberPosition.getImageId());
+        if(currentNumberPosition.hasImage()){
+            numbersImage.setImageResource(currentNumberPosition.getImageId());
+        }
+        else {
+            numbersImage.setVisibility(View.GONE);
+        }
 
         TextView  numText = currentItemView.findViewById(R.id.version_name);
         numText.setText(currentNumberPosition.getNum());
